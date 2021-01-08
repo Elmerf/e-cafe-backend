@@ -11,4 +11,10 @@ module.exports = function(app) {
     
     app.route('/menus')
         .get(todoList.allMenu);
+    
+    app.route('/pemesan')
+        .post(todoList.addPemesan);
+
+    app.route('/pemesan/pesanan')
+        .post(todoList.addData);
 };
