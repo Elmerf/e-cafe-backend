@@ -72,6 +72,7 @@ function addItem(id_pesanan, pesanan, res) {
             parseInt(pesanan[i].totalHarga)
         ];
     }
+    
     connection.query(`INSERT INTO transaksi 
         (id_pesanan, id_item, id_menu, jumlah_pesan, total) VALUES ?`, 
         [values],
